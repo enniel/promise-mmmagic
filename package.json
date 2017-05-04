@@ -1,0 +1,43 @@
+{
+  "name": "promise-mmmagic",
+  "version": "0.0.1",
+  "description": "Promise support for mmmagic",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enniel/promise-mmmagic.git"
+  },
+  "keywords": [
+    "promise",
+    "mmmagic",
+    "filetype",
+    "mime",
+    "detection",
+    "encoding"
+  ],
+  "author": "Evgeny Razumov <razumov.evgeni@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enniel/promise-mmmagic/issues"
+  },
+  "homepage": "https://github.com/enniel/promise-mmmagic",
+  "dependencies": {
+    "harmony-reflect": "^1.5.1",
+    "mmmagic": "^0.4.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "it"
+    ]
+  }
+}
