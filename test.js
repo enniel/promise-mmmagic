@@ -10,7 +10,6 @@
  */
 
 const Magic = require('./')
-const mmm = require('mmmagic')
 const fs = require('fs')
 const expect = require('chai').expect
 
@@ -18,7 +17,7 @@ const magicFile = 'node_modules/mmmagic/src/binding.cc'
 
 describe('promise-mmmagic', () => {
   it('detectFile - Normal operation, mime type', (done) => {
-    const magic = new Magic(mmm.MAGIC_MIME_TYPE)
+    const magic = new Magic(Magic.MAGIC_MIME_TYPE)
     magic
       .detectFile(magicFile)
       .then(result => {
@@ -32,7 +31,7 @@ describe('promise-mmmagic', () => {
 
   it('detect - Normal operation, mime type', (done) => {
     const buffer = fs.readFileSync(magicFile)
-    const magic = new Magic(mmm.MAGIC_MIME_TYPE)
+    const magic = new Magic(Magic.MAGIC_MIME_TYPE)
     magic
       .detect(buffer)
       .then(result => {
