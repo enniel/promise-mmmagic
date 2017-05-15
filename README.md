@@ -1,5 +1,7 @@
 # promise-mmmagic
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/enniel/promise-mmmagic.svg)](https://greenkeeper.io/)
+
 Add `Promise` support for [mmmagic](https://github.com/mscdex/mmmagic).
 
 ## Installation
