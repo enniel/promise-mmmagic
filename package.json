@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/enniel/promise-mmmagic",
   "dependencies": {
-    "harmony-reflect": "^1.5.1",
-    "mmmagic": "^0.4.5"
+    "harmony-reflect": "^1.6.1",
+    "mmmagic": "^0.5.3"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.3.0",
-    "standard": "^10.0.2"
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0",
+    "standard": "^14.3.4"
   },
   "standard": {
     "global": [
