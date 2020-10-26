@@ -1,15 +1,12 @@
 {
   "name": "promise-mmmagic",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "Promise support for mmmagic",
-  "main": "src/index.js",
-  "scripts": {
-    "lint": "standard",
-    "test": "mocha test.js"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/enniel/promise-mmmagic.git"
+    "url": "https://github.com/anthonynichols/promise-mmmagic.git"
   },
   "keywords": [
     "promise",
@@ -19,25 +16,32 @@
     "detection",
     "encoding"
   ],
-  "author": "Evgeny Razumov <razumov.evgeni@gmail.com>",
+  "author": "Anthony Nichols <hi@anthonynichols.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enniel/promise-mmmagic/issues"
+    "url": "https://github.com/anthonynichols/promise-mmmagic/issues"
   },
-  "homepage": "https://github.com/enniel/promise-mmmagic",
+  "homepage": "https://github.com/anthonynichols/promise-mmmagic",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish",
+    "test": "TS_NODE_PROJECT=./tsconfig.test.json mocha"
+  },
   "dependencies": {
     "harmony-reflect": "^1.6.1",
     "mmmagic": "^0.5.3"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mmmagic": "^0.4.30",
+    "@types/mocha": "^8.0.3",
     "chai": "^4.2.0",
     "mocha": "^8.2.0",
-    "standard": "^14.3.4"
-  },
-  "standard": {
-    "global": [
-      "describe",
-      "it"
-    ]
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   }
 }
