@@ -1,4 +1,4 @@
-import Magic from './';
+import {Magic} from './index';
 import fs from 'fs';
 import {expect} from 'chai';
 
@@ -13,7 +13,8 @@ describe('promise-mmmagic', () => {
       .then((result: string) => {
         expect(result).to.equal('text/x-c++');
         done();
-      }).catch((error: Error) => {
+      })
+      .catch((error: Error) => {
         done(error);
       });
   });

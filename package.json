@@ -29,7 +29,7 @@
     "release:major": "npm version major && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:patch": "npm version patch && npm publish",
-    "test": "TS_NODE_PROJECT=./tsconfig.test.json mocha"
+    "test": "mocha"
   },
   "dependencies": {
     "harmony-reflect": "^1.6.1",
