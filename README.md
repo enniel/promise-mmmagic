@@ -5,12 +5,12 @@ Add `Promise` support for [mmmagic](https://github.com/mscdex/mmmagic).
 ## Installation
 
 ```sh
-npm install promise-mmmagic
+npm install @anthonynichols/promise-mmmagic
 ```
 or
 
 ```sh
-yarn add promise-mmmagic
+yarn add @anthonynichols/promise-mmmagic
 ```
 
 ## Example
@@ -38,14 +38,6 @@ magic
     console.log(result)
   })
 ```
-
-## Credits
-
-- [Evgeni Razumov](https://github.com/enniel)
-
-## Support
-
-Having trouble? [Open an issue](https://github.com/enniel/promise-mmmagic/issues/new)!
 
 ## License
 
